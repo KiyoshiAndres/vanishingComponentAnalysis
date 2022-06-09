@@ -1,16 +1,19 @@
 import sympy as sym
 
 def SumOfFunctions(function_1, function_2):
+    """Returns the function that is the pointwise sum of two functions"""
     def sum(a):
         return function_1(a) + function_2(a)
     return sum
 
 def SubOfFunctions(function_1, function_2):
+    """Returns the function that is the pointwise subtraction of two functions"""
     def sub(a):
         return function_1(a) - function_2(a)
     return sub
 
 def ProductOfFunctions(function_1, function_2):
+    """Returns the function that is the pointwise product of two functions"""
     def prod(a):
         return function_1(a) * function_2(a)
     return prod
